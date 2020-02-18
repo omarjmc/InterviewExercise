@@ -1,7 +1,7 @@
-package com.selenium.interview.pages;
+package com.selenium.interview.aut.pages;
 
-import com.selenium.interview.lib.PropertyReader;
-import com.selenium.interview.lib.WebObject;
+import com.selenium.interview.aut.lib.PropertyReader;
+import com.selenium.interview.aut.lib.WebObject;
 
 public class AmazonSearchPage {
 

@@ -1,7 +1,7 @@
 package com.search.Amazon;
 
-import com.selenium.interview.facades.AmazonFcde;
-import com.selenium.interview.lib.BaseTest;
+import com.selenium.interview.aut.facades.AmazonFcde;
+import com.selenium.interview.aut.lib.BaseTest;
 import org.testng.annotations.*;
 
 public class AmazonTest extends BaseTest {

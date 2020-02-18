@@ -1,6 +1,6 @@
-package com.selenium.interview.facades;
+package com.selenium.interview.aut.facades;
 
-import com.selenium.interview.pages.AmazonSearchPage;
+import com.selenium.interview.aut.pages.AmazonSearchPage;
 
 public class AmazonFcde {
 

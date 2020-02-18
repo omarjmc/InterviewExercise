@@ -1,4 +1,4 @@
-package com.selenium.interview.lib;
+package com.selenium.interview.aut.lib;
 
 import java.io.FileInputStream;
 import java.io.IOException;

@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src\\main\\java\\com\\selenium\\interview\\cucumber\\features",
-        glue = "stepdefinitions"
+        glue = "src\\main\\java\\com\\selenium\\interview\\cucumber\\stepdefinitions"
 )
 public class TestRunner {
 }

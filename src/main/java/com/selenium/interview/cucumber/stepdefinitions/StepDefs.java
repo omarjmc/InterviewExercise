@@ -1,7 +1,7 @@
 package com.selenium.interview.cucumber.stepdefinitions;
 
-import com.selenium.interview.facades.AmazonFcde;
-import com.selenium.interview.lib.BaseTest;
+import com.selenium.interview.aut.facades.AmazonFcde;
+import com.selenium.interview.aut.lib.BaseTest;
 import io.cucumber.java.en.*;
 
 public class StepDefs extends BaseTest {
