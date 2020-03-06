@@ -9,9 +9,10 @@ import java.util.List;
 
 public class WebObject {
 
-    public String ElementLocator;
-    public String LocatorUsed;
-    public String LocatorMethod;
+    private String ElementLocator;
+    private String LocatorUsed;
+    private String LocatorMethod;
+    private By ActualLocator;
 
     public WebDriver driver = DriverFactory.getWebDriver();
 
@@ -34,27 +35,33 @@ public class WebObject {
 
         locatorParser();
 
-        By actualLocator = null;
+        ActualLocator = null;
 
         if(LocatorMethod.equals("xpath")){
-            actualLocator = By.xpath(LocatorUsed);
+            ActualLocator = By.xpath(LocatorUsed);
         }else if(LocatorMethod.equals("cssSelector")) {
-            actualLocator = By.cssSelector(LocatorUsed);
+            ActualLocator = By.cssSelector(LocatorUsed);
         }else if(LocatorMethod.equals("id")){
-            actualLocator = By.id(LocatorUsed);
+            ActualLocator = By.id(LocatorUsed);
         }else if(LocatorMethod.equals("name")){
-            actualLocator = By.name(LocatorUsed);
+            ActualLocator = By.name(LocatorUsed);
         }else if(LocatorMethod.equals("className")){
-            actualLocator = By.className(LocatorUsed);
+            ActualLocator = By.className(LocatorUsed);
         }else if(LocatorMethod.equals("linkText")){
-            actualLocator = By.linkText(LocatorUsed);
+            ActualLocator = By.linkText(LocatorUsed);
         }else if(LocatorMethod.equals("partialLinkText")){
-            actualLocator = By.partialLinkText(LocatorUsed);
+            ActualLocator = By.partialLinkText(LocatorUsed);
         }else if(LocatorMethod.equals("tagName")){
-            actualLocator = By.tagName(LocatorUsed);
+            ActualLocator = By.tagName(LocatorUsed);
         }
 
-        return actualLocator;
+        return ActualLocator;
+    }
+
+    public By getActualLocator(){
+        getLocator();
+
+        return ActualLocator;
     }
 
     public WebElement createWebElement(){
