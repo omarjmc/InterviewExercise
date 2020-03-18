@@ -5,8 +5,8 @@ import com.selenium.interview.aut.lib.WebObject;
 
 public class AmazonSearchPage {
 
-    WebObject SearchBar = new WebObject(PropertyReader.getProperty("AmazonSearch.properties", "SearchBar"));
-    WebObject SearchButton = new WebObject(PropertyReader.getProperty("AmazonSearch.properties", "SearchButton"));
+    WebObject SearchBar = new WebObject(PropertyReader.getProperty("objects/AmazonSearch.properties", "SearchBar"));
+    WebObject SearchButton = new WebObject(PropertyReader.getProperty("objects/AmazonSearch.properties", "SearchButton"));
 
     public void searchItem(String item){
         SearchBar.createWebElement().sendKeys(item);
