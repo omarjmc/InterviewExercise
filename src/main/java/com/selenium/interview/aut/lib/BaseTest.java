@@ -12,8 +12,8 @@ public class BaseTest {
         DriverFactory.initializeWebDriver();
         driver = DriverFactory.getWebDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().pageLoadTimeout(70, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(Long.parseLong(PropertyReader.getProperty("execution/ExecutionProperties.properties", "PageLoadTime")), TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Long.parseLong(PropertyReader.getProperty("execution/ExecutionProperties.properties", "PageLoadTime")), TimeUnit.SECONDS);
         driver.navigate().to(URL);
     }
 

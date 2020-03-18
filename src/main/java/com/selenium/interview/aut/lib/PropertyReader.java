@@ -13,7 +13,7 @@ public class PropertyReader {
 
         try
         {
-            InputStream is = new FileInputStream("src/test/resources/objects/"+fileName);
+            InputStream is = new FileInputStream("src/test/resources/"+fileName);
             prop = new Properties();
             prop.load(is);
 

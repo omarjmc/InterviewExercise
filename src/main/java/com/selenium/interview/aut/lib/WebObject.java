@@ -60,7 +60,6 @@ public class WebObject {
 
     public By getActualLocator(){
         getLocator();
-
         return ActualLocator;
     }
 
